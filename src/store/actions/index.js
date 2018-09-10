@@ -1,1 +1,1 @@
-export { counterAdd, counterSubstract } from './counter_actions';
+export { counterAdd, counterSubtract } from './counter_actions';

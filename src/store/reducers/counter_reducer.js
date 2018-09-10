@@ -1,4 +1,4 @@
-import { COUNTER_ADD, COUNTER_SUBSTRACT } from "../actions/action_types";
+import { COUNTER_ADD, COUNTER_SUBTRACT } from "../actions/action_types";
 
 const initialState = {
   count: 0
@@ -12,7 +12,7 @@ const counterReducer = (state = initialState, action) => {
         count: state.count + 1
       };
 
-    case COUNTER_SUBSTRACT:
+    case COUNTER_SUBTRACT:
       return {
         ...state,
         count: state.count - 1

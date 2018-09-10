@@ -1,4 +1,4 @@
-import { COUNTER_ADD, COUNTER_SUBSTRACT } from "./action_types";
+import { COUNTER_ADD, COUNTER_SUBTRACT } from "./action_types";
 
 export const counterAdd = () => {
     return {
@@ -6,8 +6,8 @@ export const counterAdd = () => {
     };
 }
 
-export const counterSubstract = () => {
+export const counterSubtract = () => {
     return {
-        type: COUNTER_SUBSTRACT
+        type: COUNTER_SUBTRACT
     };
 }

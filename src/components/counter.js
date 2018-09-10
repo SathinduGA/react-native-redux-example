@@ -27,10 +27,7 @@ const mapDispatchToProps = dispatch => {
   return {};
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CounterComponent);
+export default connect( mapStateToProps, mapDispatchToProps) (CounterComponent);
 
 // STYLES
 const styles = StyleSheet.create({

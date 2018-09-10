@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 import { connect } from 'react-redux';
-import { counterAdd, counterSubstract } from '../store/actions/index';
+import { counterAdd, counterSubtract } from '../store/actions/index';
 
 import CounterComponent from '../components/counter';
 
@@ -22,7 +22,7 @@ class MainScreen extends Component {
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity onPress={() => this.props.counterAddFunction()}><Text>INCREASE</Text></TouchableOpacity>
-          <TouchableOpacity onPress={() => this.props.counterSubstractFunction()}><Text>DECREASE</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => this.props.counterSubtractFunction()}><Text>DECREASE</Text></TouchableOpacity>
         </View>
 
       </View>
@@ -39,7 +39,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     counterAddFunction: () => dispatch(counterAdd()),
-    counterSubstractFunction: () => dispatch(counterSubstract()),
+    counterSubtractFunction: () => dispatch(counterSubtract()),
   };
 };
 
